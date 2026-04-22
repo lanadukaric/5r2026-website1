@@ -76,5 +76,22 @@
     </ol>
   </li>
 </ul>
+    <!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Linzer Stadtteile</title>
+     <h1>Stadtteile von Linz</h1>
+  <ul id="liste-linz"></ul>
+  <script>
+    // Teil A: Lokale Daten
+    const stadtteile = ["Urfahr", "Innere Stadt", "Bindermichel"];
+    const liste = document.getElementById("liste-linz");
+    stadtteile.forEach(s => {
+      let li = document.createElement("li");
+      li.textContent = s;
+      liste.appendChild(li);
+    });
+  </script>
 </body>
 </html>
