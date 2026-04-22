@@ -97,6 +97,7 @@
       .then(response => response.json())
       .then(data => {
         const sListe = document.getElementById("service-liste");
+          
         data.forEach(user => {
           let li = document.createElement("li");
           li.textContent = "User: " + user.name;
